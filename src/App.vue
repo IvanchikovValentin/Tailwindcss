@@ -26,7 +26,7 @@
         <h2 class="text-xl text-gray-900">Popular destinations</h2>
         <p class="text-gray-600">A selection of great work-friendly cities with lots to see and explore.</p>
         <div class="flex flex-wrap -mx-4">
-          <div class="mt-6 w-full px-4 lg:w-1/2 xl:w-1/3" v-for="destination in popularDestinations">
+          <div class="mt-6 w-full px-4 lg:w-1/2 xl:w-1/3" v-for="destination in popularDestinations" v-bind:key="destination.id">
             <DestinationCard :destination="destination"/>
           </div>
         </div>
@@ -46,6 +46,7 @@ export default {
     return {
       popularDestinations: [
         {
+          id: 1,
           city: 'Toronto',
           averagePrice: 120,
           propertyCount: 76,
@@ -53,6 +54,7 @@ export default {
           imageAlt: 'Toronto skyline',
         },
         {
+          id: 2,
           city: 'Malibu',
           averagePrice: 215,
           propertyCount: 43,
@@ -60,6 +62,7 @@ export default {
           imageAlt: 'Cliff in Malibu',
         },
         {
+          id: 3,
           city: 'Chicago',
           averagePrice: 130,
           propertyCount: 115,
@@ -67,6 +70,7 @@ export default {
           imageAlt: 'Chicago skyline',
         },
         {
+          id: 4,
           city: 'Seattle',
           averagePrice: 135,
           propertyCount: 63,
@@ -74,6 +78,7 @@ export default {
           imageAlt: 'Seattle skyline',
         },
         {
+          id: 5,
           city: 'Colorado',
           averagePrice: 85,
           propertyCount: 47,
@@ -81,6 +86,7 @@ export default {
           imageAlt: 'Lake in Colorado',
         },
         {
+          id: 6,
           city: 'Miami',
           averagePrice: 115,
           propertyCount: 86,
