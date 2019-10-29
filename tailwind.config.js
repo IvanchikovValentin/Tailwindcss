@@ -1,10 +1,13 @@
 module.exports = {
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        'brand-blue': '#1992d4',
+      },
+    }
   },
   variants: {
     backgroundColor: ['responsive','hover','focus','active'],
-    fontSize: ['responsive', 'hover']
   },
   plugins: []
 }
